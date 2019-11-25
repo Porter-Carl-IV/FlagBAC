@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FlagBAC</string>
+    <string name="alcohol_search_label">Alcohol Results</string>
 </resources>
