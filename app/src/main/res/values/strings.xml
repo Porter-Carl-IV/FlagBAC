@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">FlagBAC</string>
-    <string name="alcohol_search_label">Alcohol Results</string>
+    <string name="alcohol_search_banner">Alcohol Results</string>
+    <string name="store_search_banner">Store Results</string>
 </resources>

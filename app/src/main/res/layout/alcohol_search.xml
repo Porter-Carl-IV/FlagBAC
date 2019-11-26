@@ -7,6 +7,20 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/alcohol_search_label"
-        android:textSize="30sp" />
+        android:text="@string/alcohol_search_banner"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/storeResultButton"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:text="@string/store_search_banner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alcoholSearchRV"
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
+        android:layout_margin="3dp" />
+
 </LinearLayout>
