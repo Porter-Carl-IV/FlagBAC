@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FlagBAC</string>
     <string name="alcohol_search_label">Alcohol Results</string>
+    <string name="motherroad">MotherRoad</string>
+    <string name="motherroadtitle">Mother Road Brewing Company</string>
+    <string name="motherroaddesc">The Mission of Mother Road Brewing Company is to brew distinguished beers and build community one pint at a time.</string>
 </resources>

@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/motherroadtitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/motherroad"
+        app:srcCompat="@drawable/motherroad" />
+
+    <TextView
+        android:id="@+id/store_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/motherroaddesc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 </LinearLayout>
+
