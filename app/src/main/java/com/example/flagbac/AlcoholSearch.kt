@@ -25,20 +25,17 @@ class AlcoholSearch : AppCompatActivity()  {
         val alcoholRVAdapter = AlcoholAdapter( alcoholList, this )
         alcoholSearchRV.adapter = alcoholRVAdapter
 
-
-        storeResultButton.setOnClickListener{
-            val storeIntent = Intent(this@AlcoholSearch, StoreSearch::class.java)
-            startActivity(storeIntent)
-        }
     }
 
     fun addAlcohol() {
         val kolch = Alcohol("Kolch", "Mother Road", 4)
         val towerStation = Alcohol("Tower Station", "Mother Road", 5)
         val dailyDriver = Alcohol( "Daily Driver", "Mother Road", 6)
+        val pbr = Alcohol("Pabst Blue Ribbon", "Pabst Brewing Company", 7)
         alcoholList.add(kolch)
         alcoholList.add(towerStation)
         alcoholList.add(dailyDriver)
+        alcoholList.add(pbr)
     }
 }
 
