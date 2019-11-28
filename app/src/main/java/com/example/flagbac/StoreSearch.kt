@@ -13,6 +13,13 @@ class StoreSearch : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.store_search)
 
+        val alcohol = intent.getParcelableExtra<Alcohol>("alcohol_details")
+
+        for(item in alcohol.soldVia)
+        {
+            storeList.add(item)
+        }
+
         storeSearchRV.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
 
@@ -25,9 +32,9 @@ class StoreSearch : AppCompatActivity()  {
 
     fun addStore() {
 
-        storeList.add(Store("Safeway"))
-        storeList.add(Store("Majestic Marketplace"))
-        storeList.add(Store("Frys"))
+//        storeList.add(Store("Safeway"))
+//        storeList.add(Store("Majestic Marketplace"))
+//        storeList.add(Store("Frys"))
     }
 }
 

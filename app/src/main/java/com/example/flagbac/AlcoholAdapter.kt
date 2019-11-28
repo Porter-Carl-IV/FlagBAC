@@ -28,6 +28,8 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
         //holder.imgID?.text = alcoholList[location].imgID.toString()
         holder.cardView.setOnClickListener {
             val intent = Intent(context, StoreSearch::class.java)
+            val alcohol = alcoholList.get(position)
+            intent.putExtra("alcohol_details", alcohol )
             startActivity(context, intent, null)
         }
 

@@ -1,13 +1,10 @@
 package com.example.flagbac
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.flagbac.R.layout.alcohol_search
 import kotlinx.android.synthetic.main.alcohol_search.*
-import kotlinx.android.synthetic.main.alcohol_card_view.*
 
 class AlcoholSearch : AppCompatActivity()  {
 
@@ -17,25 +14,42 @@ class AlcoholSearch : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(alcohol_search)
 
-        alcoholSearchRV.layoutManager = LinearLayoutManager(this,
-            LinearLayoutManager.VERTICAL, false)
-
+        // May be unnecessary if we are not hard-coding our data in here. Using for testing.
         addAlcohol()
 
+        // To use RecyclerView we need to create an adapter for it, the following do so.
+        alcoholSearchRV.layoutManager = LinearLayoutManager(this,
+            LinearLayoutManager.VERTICAL, false)
         val alcoholRVAdapter = AlcoholAdapter( alcoholList, this )
         alcoholSearchRV.adapter = alcoholRVAdapter
 
     }
 
     fun addAlcohol() {
-        val kolch = Alcohol("Kolch", "Mother Road", 4)
-        val towerStation = Alcohol("Tower Station", "Mother Road", 5)
-        val dailyDriver = Alcohol( "Daily Driver", "Mother Road", 6)
-        val pbr = Alcohol("Pabst Blue Ribbon", "Pabst Brewing Company", 7)
+        val safeway = Store("Safeway")
+        val frys = Store( "Frys")
+        val majesticMP = Store( "Majestic Marketplace")
+        val beaverSL = Store("Beaver Street Liquor")
+        val grandCS = Store("Grand Canyon Spirits")
+        val uptown = Store("Uptown Pubhouse")
+
+        val stores1 = ArrayList<Store>()
+        val stores2 = ArrayList<Store>()
+
+        stores1.add(safeway)
+        stores1.add(frys)
+        stores1.add(majesticMP)
+        stores2.add(beaverSL)
+        stores2.add(grandCS)
+        stores2.add(uptown)
+        val kolch = Alcohol("Kolch", "Mother Road", 4, stores1)
+        val towerStation = Alcohol("Tower Station", "Mother Road", 5, stores2)
+//        val dailyDriver = Alcohol( "Daily Driver", "Mother Road", 6, majesticMP)
+//        val pbr = Alcohol("Pabst Blue Ribbon", "Pabst Brewing Company", 7, uptown)
         alcoholList.add(kolch)
         alcoholList.add(towerStation)
-        alcoholList.add(dailyDriver)
-        alcoholList.add(pbr)
+//        alcoholList.add(dailyDriver)
+//        alcoholList.add(pbr)
     }
 }
 
