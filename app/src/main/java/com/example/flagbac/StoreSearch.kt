@@ -13,28 +13,21 @@ class StoreSearch : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.store_search)
 
+
         val alcohol = intent.getParcelableExtra<Alcohol>("alcohol_details")
 
+        // Adds the soldVia stores passed from selected alcohol to display.
         for(item in alcohol.soldVia)
         {
             storeList.add(item)
         }
 
+        // RecyclerView for StoreSearch.
         storeSearchRV.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
-
-        addStore()
-
         val storeRVAdapter = StoreAdapter( storeList )
         storeSearchRV.adapter = storeRVAdapter
 
-    }
-
-    fun addStore() {
-
-//        storeList.add(Store("Safeway"))
-//        storeList.add(Store("Majestic Marketplace"))
-//        storeList.add(Store("Frys"))
     }
 }
 
