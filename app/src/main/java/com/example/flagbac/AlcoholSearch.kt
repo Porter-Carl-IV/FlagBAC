@@ -52,4 +52,3 @@ class AlcoholSearch : AppCompatActivity()  {
 //        alcoholList.add(pbr)
     }
 }
-

@@ -32,8 +32,6 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
             intent.putExtra("alcohol_details", alcohol )
             startActivity(context, intent, null)
         }
-
-
     }
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cardView = itemView.findViewById<CardView>(R.id.alcoholCV)
@@ -41,8 +39,5 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
         val brewery = itemView.findViewById<TextView>(R.id.alcohol_brewery)
         //val imgID = itemView.findViewById<ImageView>(R.id.alcohol_photo)
 
-
     }
-
-
 }

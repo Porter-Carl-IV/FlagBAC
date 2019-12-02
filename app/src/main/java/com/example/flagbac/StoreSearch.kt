@@ -25,9 +25,8 @@ class StoreSearch : AppCompatActivity()  {
         // RecyclerView for StoreSearch.
         storeSearchRV.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
-        val storeRVAdapter = StoreAdapter( storeList )
+        val storeRVAdapter = StoreAdapter( storeList, this )
         storeSearchRV.adapter = storeRVAdapter
-
     }
 }
 
