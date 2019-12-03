@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.startActivity
@@ -25,7 +26,7 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name?.text = alcoholList[position].name
         holder.brewery?.text = alcoholList[position].brewery
-        //holder.imgID?.text = alcoholList[location].imgID.toString()
+        holder.imgID.setImageResource(R.drawable.beer);
         holder.cardView.setOnClickListener {
             val intent = Intent(context, StoreSearch::class.java)
             val alcohol = alcoholList.get(position)
@@ -39,7 +40,7 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
         val cardView = itemView.findViewById<CardView>(R.id.alcoholCV)
         val name = itemView.findViewById<TextView>(R.id.alcohol_name)
         val brewery = itemView.findViewById<TextView>(R.id.alcohol_brewery)
-        //val imgID = itemView.findViewById<ImageView>(R.id.alcohol_photo)
+        val imgID = itemView.findViewById<ImageView>(R.id.alcohol_photo)
 
 
     }

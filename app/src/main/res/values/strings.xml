@@ -2,4 +2,6 @@
     <string name="app_name">FlagBAC</string>
     <string name="alcohol_search_banner">Alcohol Results</string>
     <string name="store_search_banner">Store Results</string>
+    <string name="activity_main_banner">Alcohol Search</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
