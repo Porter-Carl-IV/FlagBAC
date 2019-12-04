@@ -26,12 +26,12 @@ class AlcoholSearch : AppCompatActivity()  {
     }
 
     fun addAlcohol() {
-        val safeway = Store("Safeway")
-        val frys = Store( "Frys")
-        val majesticMP = Store( "Majestic Marketplace")
-        val beaverSL = Store("Beaver Street Liquor")
-        val grandCS = Store("Grand Canyon Spirits")
-        val uptown = Store("Uptown Pubhouse")
+        val safeway = Store("Safeway", "A store that sells food products but more importantly, alcohol.")
+        val frys = Store( "Frys", "A store that sells food products but more importantly, alcohol.")
+        val majesticMP = Store( "Majestic Marketplace", "An overpriced store that sells super fancy craft beers that still taste bad.")
+        val beaverSL = Store("Beaver Street Liquor", "I have never been here.")
+        val grandCS = Store("Grand Canyon Spirits", "Im assumming they sell spirits.")
+        val uptown = Store("Uptown Pubhouse", "The worst bar in all of flagstaff. Well I guess its better than Collins.")
 
         val stores1 = ArrayList<Store>()
         val stores2 = ArrayList<Store>()

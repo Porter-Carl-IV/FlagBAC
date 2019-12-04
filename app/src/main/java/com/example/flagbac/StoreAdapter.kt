@@ -25,8 +25,8 @@ class StoreAdapter(val storeList: ArrayList<Store>, val context: Context) : Recy
 
         holder.cardView.setOnClickListener {
             val intent = Intent(context, StoreDescription::class.java)
-            // val store = storeList.get(location)
-            // intent.putExtra("alcohol_details", store )
+            val store = storeList.get(location)
+            intent.putExtra("store_details", store )
             ContextCompat.startActivity(context, intent, null)
         }
     }
