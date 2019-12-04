@@ -8,6 +8,7 @@ import kotlinx.android.parcel.Parcelize
 // Ignore warning, it works fine. Throwing error is a problem with the IDE.
 data class Store(
     val name: String,
-    val desc: String) : Parcelable {
+    val desc: String,
+    val imgID: Int) : Parcelable {
 
 }

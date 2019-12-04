@@ -13,7 +13,6 @@ class StoreSearch : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.store_search)
 
-
         val alcohol = intent.getParcelableExtra<Alcohol>("alcohol_details")
 
         // Adds the soldVia stores passed from selected alcohol to display.

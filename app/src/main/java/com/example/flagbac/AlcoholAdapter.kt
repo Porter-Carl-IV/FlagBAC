@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.alcohol_card_view.*
 
 class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
                      val context: Context) : RecyclerView.Adapter<AlcoholAdapter.ViewHolder>() {
@@ -26,7 +26,8 @@ class AlcoholAdapter(val alcoholList: ArrayList<Alcohol>,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name?.text = alcoholList[position].name
         holder.brewery?.text = alcoholList[position].brewery
-        holder.imgID.setImageResource(R.drawable.beer)
+        holder.imgID.setImageDrawable(ContextCompat.getDrawable(context, alcoholList[position].imgID))
+
         holder.cardView.setOnClickListener {
             val intent = Intent(context, StoreSearch::class.java)
             val alcohol = alcoholList.get(position)
