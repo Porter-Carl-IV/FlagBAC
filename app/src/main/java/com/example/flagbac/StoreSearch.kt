@@ -27,6 +27,7 @@ class StoreSearch : AppCompatActivity()  {
             LinearLayoutManager.VERTICAL, false)
         val storeRVAdapter = StoreAdapter( storeList, this )
         storeSearchRV.adapter = storeRVAdapter
+
     }
 }
 

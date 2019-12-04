@@ -4,4 +4,8 @@
     <string name="store_search_banner">Store Results</string>
     <string name="title_activity_store_description">StoreDescription</string>
     <string name="mother_road">Mother Road</string>
+    <string name="activity_main_banner">Alcohol Search</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="def_store_name">Mother Road Brewing Company</string>
+    <string name="def_store_desc">Mother Road Brewing Company</string>
 </resources>
