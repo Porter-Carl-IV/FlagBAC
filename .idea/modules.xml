@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlagBAC.iml" filepath="$PROJECT_DIR$/FlagBAC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FlagBAC.iml" filepath="$PROJECT_DIR$/.idea/FlagBAC.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
